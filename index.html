@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Course</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Additional styles for centering and gaps */
+      .centered-text {
+        text-align: center;
+      }
+      .section-gap {
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="navbar-left">
+          <h1>Webkings</h1>
+        </div>
+        <ul class="navbar-right">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" class="hero">
+        <h1>Welcome to the Web Development Course</h1>
+        <p>Learn HTML, CSS, and JavaScript from scratch!</p>
+        <a href="#contact" class="cta-button">Book a Call</a>
+      </section>
+
+      <section id="services" class="content section-gap">
+        <h2 class="centered-text">Web Development</h2>
+        <div class="content-item left">
+          <img src="download1.png" alt="Web Development" />
+          <p>
+            Web development is a growing field with immense opportunities. In
+            2024, the demand for web developers is expected to continue rising
+            as more businesses and services move online. Mastering web
+            technologies like HTML, CSS, and JavaScript is essential for
+            building modern, responsive websites and web applications. As
+            technology evolves, developers must stay updated with the latest
+            trends and best practices to remain competitive. The web development
+            landscape includes a wide range of tools and frameworks that make
+            the development process more efficient and enjoyable. From front-end
+            technologies like React and Angular to back-end solutions like
+            Node.js and Django, the possibilities are endless.
+          </p>
+        </div>
+        <div class="content-item right">
+          <img src="download.jpeg" alt="Web Development" />
+          <p>
+            With the advent of new frameworks and libraries, web development is
+            becoming more efficient and powerful. The ability to create dynamic,
+            interactive user experiences is more accessible than ever.
+            Developers who stay updated with the latest trends and technologies
+            will find themselves in high demand in 2024. As businesses
+            increasingly rely on web-based solutions, the need for skilled
+            developers who can create seamless, user-friendly interfaces grows.
+            Additionally, the integration of artificial intelligence and machine
+            learning into web development opens up new opportunities for
+            innovation. As a web developer, you can work on a variety of
+            projects, from simple websites to complex web applications that
+            serve millions of users.
+          </p>
+        </div>
+        <div class="content-item left">
+          <img src="download (1).jpeg" alt="Web Development" />
+          <p>
+            Web development offers diverse career paths, from front-end and
+            back-end development to full-stack development. The field also
+            provides opportunities to specialize in areas like e-commerce, web
+            security, and progressive web apps. The scope of web development in
+            2024 is vast, making it an exciting time to enter the industry. As
+            the digital world continues to expand, web developers play a crucial
+            role in shaping how we interact with technology. Whether you're
+            building websites for small businesses or developing
+            enterprise-level applications, your skills as a web developer will
+            be in high demand. Furthermore, web development is a field that
+            encourages continuous learning and growth, allowing you to evolve
+            with the industry.
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="about-section section-gap">
+        <h2 class="centered-text">About Us</h2>
+        <div class="about-content centered-text">
+          <p>
+            Webkings is a web development agency that started in 2020 by three
+            friends in college in India. Their journey began with a passion for
+            technology and a dream to build something impactful. Facing numerous
+            challenges, from tight budgets to learning the ropes of business
+            management, they persevered with dedication and innovation.
+          </p>
+          <p>
+            The first challenge was securing initial clients. With a lack of
+            experience, the trio had to rely on personal networks and offer
+            competitive rates to gain trust. They also had to balance their
+            academic commitments with their budding business, often working late
+            into the night on projects.
+          </p>
+          <p>
+            As their skills improved and their portfolio grew, Webkings began
+            attracting more attention. They expanded their services, taking on
+            larger and more complex projects. The team faced technical
+            challenges, but their collaborative spirit and problem-solving
+            abilities saw them through.
+          </p>
+          <p>
+            By 2024, Webkings had established itself as a reputable name in the
+            web development industry, known for delivering high-quality websites
+            and applications. The friends' journey from college students to
+            successful entrepreneurs is a testament to their hard work and
+            vision.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section section-gap">
+        <h2 class="centered-text">Contact Us</h2>
+        <div class="contact-content centered-text">
+          <form action="submit_form.php" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="course">Preferred Course:</label>
+            <select id="course" name="course" required>
+              <option value="html_css_js">HTML, CSS, and JavaScript</option>
+              <option value="react_js">React.js</option>
+              <option value="node_js">Node.js</option>
+              <option value="full_stack">Full Stack Development</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="cta-button">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Webkings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="navbar-left">
+          <h1>Webkings</h1>
+        </div>
+        <ul class="navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contact-content">
+        <!-- <h1>Contact Us</h1> -->
+        <form action="submit_form.php" method="post" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="course">Preferred Course:</label>
+          <select id="course" name="course" required>
+            <option value="html_css_js">HTML, CSS, and JavaScript</option>
+            <option value="react_js">React.js</option>
+            <option value="node_js">Node.js</option>
+            <option value="full_stack">Full Stack Development</option>
+          </select>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="cta-button">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
